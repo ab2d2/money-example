@@ -1,9 +1,8 @@
 package com.driven;
 
 public class Dollar extends Money{
-    private int amount;
     Dollar(int amount) {
-        this.amount = amount;
+        super(amount);
     }
 
     Dollar times(int multiplier) {
@@ -12,8 +11,4 @@ public class Dollar extends Money{
         return new Dollar(amount * multiplier);
     }
 
-    public boolean equals(Object obj) {
-        Dollar dollar = (Dollar) obj;
-        return amount == dollar.amount;
-    }
 }
