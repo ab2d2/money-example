@@ -1,6 +1,11 @@
 package com.driven;
 
 public class Dollar extends Money{
+    @Override
+    String currency() {
+        return "USD";
+    }
+
     Dollar(int amount) {
         super(amount);
     }

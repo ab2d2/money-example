@@ -1,6 +1,11 @@
 package com.driven;
 
 public class Franc extends Money{
+    @Override
+    String currency() {
+        return "CHF";
+    }
+
     Franc(int amount) {
         super(amount);
     }
@@ -10,4 +15,6 @@ public class Franc extends Money{
         // this pattern removes 'aliasing' problem
         return new Franc(amount * multiplier);
     }
+
+
 }
