@@ -1,4 +1,4 @@
-package com.driven.test;
+package com.driven;
 
 public class Main {
 

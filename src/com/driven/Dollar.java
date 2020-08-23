@@ -1,4 +1,4 @@
-package com.driven.test;
+package com.driven;
 
 public class Dollar {
     int amount;
