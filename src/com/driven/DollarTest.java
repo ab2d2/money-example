@@ -13,17 +13,17 @@ class DollarTest {
 
     @Test
     void times() {
-        Dollar five = new Dollar(5);
+        Dollar five = new Dollar(5, "USD");
 
-        assertEquals(new Dollar(10),five.times(2));
-        assertEquals(new Dollar(15),five.times(3));
-        assertEquals(new Dollar(10),five.times(2));
+        assertEquals(Money.dollar(10),five.times(2));
+        assertEquals(Money.dollar(15),five.times(3));
+        assertEquals(Money.dollar(10),five.times(2));
 
     }
 
     void testEquality() {
-        assertTrue(new Dollar(5).equals(new Dollar(5)));
-        assertFalse(new Dollar(5).equals(new Dollar(6)));
+        assertTrue(Money.dollar(5).equals(Money.dollar(5)));
+        assertFalse(Money.dollar(5).equals(Money.dollar(6)));
 
     }
 }

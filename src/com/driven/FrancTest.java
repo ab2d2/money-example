@@ -12,16 +12,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class FrancTest {
     @Test
     void times() {
-        Franc five = new Franc(5);
+        Franc five = new Franc(5, "CHF");
 
-        assertEquals(new Franc(10),five.times(2));
-        assertEquals(new Franc(15),five.times(3));
-        assertEquals(new Franc(10),five.times(2));
+        assertEquals(Money.franc(10),five.times(2));
+        assertEquals(Money.franc(15),five.times(3));
+        assertEquals(Money.franc(10),five.times(2));
     }
 
     @Test
     void testEquals() {
-        assertTrue(new Franc(5).equals(new Franc(5)));
-        assertFalse(new Franc(5).equals(new Franc(6)));
+        assertTrue(Money.franc(5).equals(Money.franc(5)));
+        assertFalse(Money.franc(5).equals(Money.franc(6)));
     }
 }
