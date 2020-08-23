@@ -1,4 +1,9 @@
 package com.driven;
+/** Getting to green:
+ * Fake it - return a constant and gradually replace with variables
+ * use obvious implementation - type the most obvious implementation
+ * Triangulation -
+ */
 
 import org.junit.jupiter.api.Test;
 
