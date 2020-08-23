@@ -1,13 +1,16 @@
 package com.driven;
 
 public class Franc extends Money{
+    private String currency;
+
     @Override
     String currency() {
-        return "CHF";
+        return currency;
     }
 
     Franc(int amount) {
         super(amount);
+        currency = "CHF";
     }
 
     Franc times(int multiplier) {
