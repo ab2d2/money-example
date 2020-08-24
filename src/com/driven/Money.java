@@ -2,8 +2,8 @@ package com.driven;
 
 class Money {
 
-    protected int amount;
-    protected String currency;
+    private int amount;
+    private String currency;
 
     String currency() {
         return currency;
