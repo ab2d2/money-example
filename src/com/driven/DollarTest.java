@@ -13,7 +13,7 @@ class DollarTest {
 
     @Test
     void times() {
-        Dollar five = new Dollar(5, "USD");
+        Money five = new Money(5, "USD");
 
         assertEquals(Money.dollar(10),five.times(2));
         assertEquals(Money.dollar(15),five.times(3));
